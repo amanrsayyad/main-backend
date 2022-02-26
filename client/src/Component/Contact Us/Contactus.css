@@ -1,0 +1,148 @@
+.contact_new{
+    background: linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.1)), url(https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__content{
+    color: #fff;
+    padding: 3rem 1rem;
+    line-height: 1;
+    text-align:center;
+}
+.contact__content h1{
+    font-size: clamp(1.5rem, 8vw, 3em);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.contact__content p{
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+    .contact_new{
+        margin: 0.1px;
+        height: 50vh;
+    }
+    .contact__content h1{
+        margin-top: 3rem;
+    }
+}
+
+.contact{
+    background: linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.1)), url(https://media.istockphoto.com/vectors/floral-pattern-vector-id538345972?k=20&m=538345972&s=612x612&w=0&h=U13O8EuiA2MOSuj-S4lB-OJwRlmsKQml60IBQhYnCF0=);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem calc((100vw - 1250px) / 2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem calc((100vw - 1100px)/ 2); 
+    overflow: hidden;
+}
+.contact_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+.contact_card {
+    width: 100%;
+    height: 100%;
+}
+.contact_card textarea {
+    resize: none;
+}
+.contact_h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #0e013d;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #666;
+}
+.btn_contact{
+    width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #0e013d;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+.field{
+	width: 100%;
+	border: 2px solid #0e013d;
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 20px;
+    font-family: cursive;
+     font-weight: 400;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+input[type="email"]
+{
+font-size: 20px;
+font-family: cursive;
+font-weight: 400;
+}
+
+@media screen and (max-width: 900px){
+    .contact-in{
+        padding: 4rem calc((100vw - 1000px)/ 2); 
+    }
+    .contact_container{
+        grid-template-columns: 1fr;
+    }
+    .contact_card iframe{
+        width: 650px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 768px){
+    .contact_container{
+        grid-template-columns: 1fr;
+    }
+    .contact_card iframe{
+        width: 300px;
+        height: 250px;
+    }
+}
+
+

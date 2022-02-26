@@ -1,0 +1,137 @@
+.book_btn {
+  padding: 10px;
+  position: fixed;
+  left: 10px;
+  top: 145px;
+  z-index: 1000;
+  background: linear-gradient(to right, #f58334, #d62f2f);
+  /* background-color: #699b9b;
+    background-image: linear-gradient(315deg, #0cbaba 20%, #380036 74%); */
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  animation: grow-shrink 3000ms;
+  animation-iteration-count: infinite;
+  transition: 2s ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.book_btn a {
+  text-decoration: none;
+  color: #fff;
+}
+@keyframes grow-shrink {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.book_btn > img {
+  width: 100px;
+  height: 100px;
+}
+.book_btn:hover {
+  color: #000;
+}
+.whatsapp_main {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  z-index: 10000;
+  animation: wa-shrink 2500ms;
+  animation-iteration-count: infinite;
+  transition: 2s ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wa-shrink {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.whatsapp_main img {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 991px) {
+  .book_btn {
+    top: 170px;
+    right: 35px;
+    font-size: 10px;
+    padding: 8px;
+  }
+  .whatsapp_main {
+    top: 120px;
+  }
+  .call_btn_now {
+    right: 8%;
+    padding: 8px;
+    bottom: 100px;
+  }
+  @keyframes grow_shrink {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+}
+.ori {
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(-360deg);
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.feedback_form {
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px;
+  background: linear-gradient(to right, #f58334, #d62f2f);
+  border-radius: 10px;
+  animation: feetback-shrink 2500ms;
+  animation-iteration-count: infinite;
+  transition: 2s ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+@keyframes feetback-shrink {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.feedback_form a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}

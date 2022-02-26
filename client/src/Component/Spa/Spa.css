@@ -1,0 +1,165 @@
+/*----------------- SPA HEADING --------------------------------- */
+.spa_new {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spa__content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.spa__content h1 {
+  font-size: clamp(1.5rem, 8vw, 5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 3px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 500;
+}
+.spa__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .spa_new {
+    margin: 0.1px;
+    height: 50vh;
+  }
+}
+
+/*-------------------- SPA TEXT PARA ------------------------ */
+.spa {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("../../Assets/flower.png");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spa_text {
+  text-align: center;
+}
+.spa_text h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+.spa_text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .spa {
+    height: 110vh;
+  }
+  .spa_text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .spa_text h3 {
+    font-size: 2rem;
+  }
+}
+
+/*----------------------------- SPA CARD ---------------------*/
+.spa_tagline {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("../../Assets/flower.png");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spa_tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.spa_tag_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.spa_img_container {
+  position: relative;
+}
+.spa_img_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.spa_tag_border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  opacity: 0.2;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 10px;
+}
+.spa_tag_icon {
+  position: absolute;
+  left: 85px;
+  top: 150px;
+  z-index: 1000;
+  color: #fff;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 991px) {
+  .spa_tagline {
+    height: 240vh;
+  }
+  .spa_tag_container {
+    grid-template-columns: 1fr;
+  }
+  .spa_img_container {
+    margin: 25px;
+  }
+  .spa_tag_border {
+    left: 15px;
+    top: 18px;
+  }
+}
+
+/* SPA PLAN CARD  */
+.spa_massage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem calc((100vw - 1100px) / 2);
+}
+.spa_msg_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+@media screen and (max-width: 991px) {
+  .spa_msg_container {
+    grid-template-columns: 1fr;
+  }
+}

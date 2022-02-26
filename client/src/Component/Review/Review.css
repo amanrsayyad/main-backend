@@ -1,0 +1,61 @@
+.google {
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    margin: 20px 0px;
+}
+.google_grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.google_card {
+    width: 80%;
+    padding: 20px;
+    background-color: rgb(186, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.flex_card > img {
+    width: 150px;
+    height: 60px;
+    background-size: cover;
+}
+.flex_card > span {
+    font-size: 30px;
+    font-weight: 500;
+    align-items: center;
+}
+.number {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.google_btn > a {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: monospace;
+}
+.rating {
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    padding: 10px;
+}
+.rating > img {
+    width: 120px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 991) {
+    .google_card {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+} 

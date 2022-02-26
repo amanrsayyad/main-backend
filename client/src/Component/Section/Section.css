@@ -1,0 +1,112 @@
+.section {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/executivePool.jpg);
+  height: 150vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sec_h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: 'Redressed', cursive;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.section_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  color: #fff;
+}
+.section_border {
+  border: 1px solid #fff;
+  padding: 20px;
+}
+.section_border > h2 {
+  font-size: 2rem;
+}
+.section_border > p {
+  font-size: 1rem;
+}
+.section_card1 {
+  background: #c29336;
+  padding: 20px;
+}
+.section_card2 {
+  background: #636e87;
+  padding: 20px;
+}
+.section_border > p > span {
+  display: block;
+}
+.section_card3 {
+  background: #44706e;
+  padding: 20px;
+}
+.section_card4 {
+  background: #b76f71;
+  padding: 20px;
+}
+.section_card5 {
+  background: #5e965b;
+  padding: 20px;
+}
+.section_card6 {
+  background: #31a9a9;
+  padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .section {
+    height: 400vh;
+    padding: 1rem calc((100vw - 1100px) / 2);
+  }
+  .sec_h2 {
+    font-size: 2rem;
+  }
+  .section_border > h2 {
+    font-size: 1.5rem;
+  }
+  .section_border > p {
+    font-size: 1rem;
+  }
+  .section_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.1rem;
+  }
+  .section_card1 {
+    padding: 10px;
+  }
+  .section_card2 {
+    padding: 10px;
+  }
+  .section_card3 {
+    padding: 10px;
+  }
+  .section_card4 {
+    padding: 10px;
+  }
+  .section_card5 {
+    padding: 10px;
+  }
+  .section_card6 {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .section {
+    padding: 1rem calc((100vw - 1100px) / 2);
+  }
+  .section_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.1rem;
+    margin: 18px;
+  }
+}

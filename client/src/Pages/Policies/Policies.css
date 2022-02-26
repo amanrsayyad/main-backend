@@ -1,0 +1,76 @@
+.policies_new{
+    background: linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.1)), url(https://images.unsplash.com/photo-1600251869898-96138e5e3ad4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .policies__content{
+    color: #fff;
+    padding: 3rem 1rem;
+    line-height: 1;
+    text-align:center;
+  }
+  .policies__content h1{
+    font-size: clamp(1.5rem, 8vw, 3em);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  .policies__content p{
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    margin-bottom: 2.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    .policies_new{
+        margin: 0.1px;
+        height: 50vh;
+    }
+  }
+
+
+.policies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem calc((100vw - 1200px) / 2);
+}
+.policies_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.2rem;
+}
+.policies_card {
+    width: 300px;
+    height: 270px;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: rgb(229, 229, 248);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+.policies_img {
+    font-size: 55px;
+    color: rgb(0, 0, 51);
+    display: block;
+    text-align: center;
+}
+.policies_text {
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 991px) {
+    .policies_container {
+        grid-template-columns: 1fr;
+    }
+}

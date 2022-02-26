@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  z-index: 10000;
+  top: 6%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  /* background-color: #0e013d; */
+  color: white;
+  /* box-shadow: 0px 4px 18px 1px rgb(0 0 0 / 10%),
+		0px 4px 5px 0px rgb(0 0 0 / 8%), 0px 1px 10px 0px rgb(0 0 0 / 9%); */
+}
+.header.scroll {
+  background-color: rgba(9, 0, 44, 0.9);
+  position: sticky;
+}
+.header__left > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+.header_logo {
+  width: 120px;
+  height: 65px;
+  object-fit: cover;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.header__icons > ul > a:hover {
+  color: #ffd700;
+  transition: all ease 0.5s;
+}
+.header__icons > ul > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+.header__left > a > span {
+  color: #fff;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__icons {
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+}
+.menu_icon {
+  display: none;
+}
+.dropdown {
+  /* background-color: #0e013d; */
+  background-color: transparent;
+  display: inline-block;
+  color: #fff;
+}
+.newDrop a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .newDrop {
+    position: absolute;
+    left: 10;
+  }
+  .dropdown {
+    background: none;
+  }
+  .newDrop a {
+    color: #0e013d;
+  }
+}
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 65px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    background-color: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .menu_icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-20%, 35%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 5px;
+    color: #fff;
+  }
+  .header__icons > ul > a {
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 25px;
+    color: #0e013d;
+  }
+}

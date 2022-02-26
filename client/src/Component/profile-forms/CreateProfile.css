@@ -1,0 +1,115 @@
+.createProfile_new {
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+        url(../../Assets/deluxe1.JPG); */
+  background-color: rgb(0, 0, 42);
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.createProfile_content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.createProfile_content h1 {
+  font-size: clamp(1.5rem, 8vw, 6.5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.createProfile__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .createProfile_new {
+    margin: 0.1px;
+    height: 20vh;
+  }
+}
+
+
+.createProfile {
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgb(252, 249, 245);
+  margin-top: 25px;
+  padding: 35px;
+  border-radius: 5px;
+}
+.createProfile > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(154, 154, 243);
+}
+.createProfile > p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.profile_fields {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #0e013d;
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+}
+.profile_fields:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.profile_fields:focus {
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+.profile_fields::placeholder {
+    font-size: 20px;
+    font-family: cursive;
+}
+.update_profile {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #0e013d;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.profile_btn {
+    margin: 20px 100px;
+}
+.update_profile:hover {
+    color: yellow;
+}
+.label_rooms {
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 400;
+}
+input[type="text"]
+{
+font-size: 20px;
+font-family: cursive;
+font-weight: 400;
+}
+
+input[type="email"]
+{
+font-size: 20px;
+font-family: cursive;
+font-weight: 400;
+}
+
+input[type="password"]
+{
+font-size: 20px;
+font-family: cursive;
+font-weight: 400;
+}

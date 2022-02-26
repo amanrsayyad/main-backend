@@ -1,0 +1,133 @@
+/*------------- UTILS CSS  --------------*/
+
+.spa_msg_cards {
+  padding: 15px;
+  box-shadow: 0px 4px 18px 1px rgb(0 0 0 / 10%), 0px 4px 5px 0px rgb(0 0 0 / 8%),
+    0px 1px 10px 0px rgb(0 0 0 / 9%);
+  margin: 5px;
+}
+.spa_msg_cards h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.spa_border p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.msg_prop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prop_head {
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.prop_head li {
+  margin-bottom: 15px;
+}
+.prop_time {
+  list-style: none;
+  padding: 1.5px;
+  border: 1px solid rgb(56, 56, 255);
+  margin-bottom: 15px;
+}
+.spa_border {
+  padding: 5px;
+  border: 2px solid rgb(46, 46, 46);
+}
+
+/*-------------------- SPA SERVICES -------------------------*/
+.spaser {
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/spa.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1250px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.spaser_h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.spaser_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.4rem;
+}
+.spaser_room {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px;
+  grid-gap: 0.5rem;
+  background-color: #fff;
+  position: relative;
+}
+.spaser_room > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.spaser_room > div > li {
+  list-style: none;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.opa_spaser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  opacity: 0.2;
+  width: 45%;
+  height: 90%;
+  position: absolute;
+  top: 25px;
+  left: 14px;
+  bottom: 25px;
+  right: 25px;
+}
+.spaser_border {
+  margin: 10px;
+  border: 1px solid #000;
+}
+.spaser_room > div > h3 {
+  font-size: 30px;
+  padding: 15px;
+}
+.spaser_room > div > p {
+  padding: 15px;
+  font-size: 20px;
+}
+.spaser_btn {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .spaser {
+    height: 280vh;
+  }
+  .spaser_h2 {
+    font-size: 2.5rem;
+  }
+  .spaser_container {
+    grid-template-columns: 1fr;
+    background-color: #fff;
+  }
+  .spaser_room {
+    grid-template-columns: 1fr;
+  }
+  .opa_spaser {
+    display: none;
+  }
+}

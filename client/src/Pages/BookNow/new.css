@@ -1,0 +1,212 @@
+/* Deluxe  */
+.deluxe_new {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/deluxe1.JPG);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deluxe__content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.deluxe_content h1 {
+  font-size: clamp(1.5rem, 8vw, 6.5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Satisfy', cursive;
+}
+.deluxe__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .deluxe_new {
+    margin: 0.1px;
+    height: 50vh;
+  }
+}
+
+/* Executive  */
+.executive_new {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/executive2.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.executive__content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.executive__content h1 {
+  font-size: clamp(1.5rem, 8vw, 5.5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Satisfy', cursive;
+}
+.executive__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .executive_new {
+    margin: 0.1px;
+    height: 50vh;
+  }
+}
+/* KING  */
+.king_new {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/king1.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.king__content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.king__content h1 {
+  font-size: clamp(1.5rem, 8vw, 5.5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Satisfy', cursive;
+}
+.king__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .king_new {
+    margin: 0.1px;
+    height: 50vh;
+  }
+}
+/* QUEEN  */
+.queen_new {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/queen2.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.queen__content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.queen__content h1 {
+  font-size: clamp(1.5rem, 8vw, 5.5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Satisfy', cursive;
+}
+.queen__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .queen_new {
+    margin: 0.1px;
+    height: 50vh;
+  }
+}
+
+/* SUPERIOR KING ROOM  */
+.superiorKing_new {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/superiorKing1.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.superiorKing__content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.superiorKing__content h1 {
+  font-size: clamp(1.5rem, 8vw, 5.5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Satisfy', cursive;
+}
+.superiorKing__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .superiorKing_new {
+    margin: 0.1px;
+    height: 50vh;
+  }
+}
+/* SUPERIOR QUEEN ROOM  */
+.superiorQueen_new {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/superiorQueen.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.superiorQueen__content {
+  color: #fff;
+  padding: 3rem 1rem;
+  line-height: 1;
+  text-align: center;
+}
+.superiorQueen__content h1 {
+  font-size: clamp(1.5rem, 8vw, 5.5em);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Satisfy', cursive;
+}
+.superiorQueen__content p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .superiorQueen_new {
+    margin: 0.1px;
+    height: 50vh;
+  }
+}

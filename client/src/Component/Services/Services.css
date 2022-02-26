@@ -1,0 +1,49 @@
+.service {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapermaiden.com%2Fwallpaper%2F41971%2Fdownload%2F1920x1080%2Fblue-background-texture-pattern-gradient-cloud-abstract.jpeg&f=1&nofb=1);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+}
+.service_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+.card_service i {
+  font-size: 3.5rem;
+}
+.card_service h3 {
+  font-size: 35px;
+}
+.card_service p {
+  font-size: 20px;
+}
+@media screen and (max-width: 991px) {
+  .service {
+    height: 210vh;
+    padding: 1.5rem calc((100vw - 1100px) / 2);
+  }
+  .service_container {
+    grid-template-columns: 1fr;
+  }
+  .card_service {
+    padding: 28px;
+  }
+  .card_service i {
+    font-size: 2.5rem;
+  }
+  .card_service h3 {
+    font-size: 30px;
+  }
+  .card_service p {
+    font-size: 15px;
+  }
+}

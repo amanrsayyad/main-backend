@@ -1,0 +1,94 @@
+.rooms {
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../Assets/superiorKing1.jpg);
+  height: 250vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1250px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.room_h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  /* margin-bottom: 2rem; */
+  color: #fff;
+  font-family: 'Redressed', cursive;
+}
+.room_p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  font-family: sans-serif;
+  font-style: italic;
+}
+.rooms_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.4rem;
+}
+.card_room {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px;
+  grid-gap: 0.5rem;
+  background-color: #fff;
+  position: relative;
+}
+.card_room > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.opa_room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  opacity: 0.2;
+  width: 45%;
+  height: 90%;
+  position: absolute;
+  top: 25px;
+  left: 14px;
+  bottom: 25px;
+  right: 25px;
+}
+.room_border {
+  margin: 10px;
+  border: 1px solid #000;
+}
+.card_room > div > h3 {
+  font-size: 30px;
+  padding: 15px;
+}
+.card_room > div > p {
+  padding: 15px;
+  font-size: 20px;
+}
+.room_btn {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .rooms {
+    height: 800vh;
+  }
+  .room_h2 {
+    font-size: 2.5rem;
+  }
+  .rooms_container {
+    grid-template-columns: 1fr;
+    background-color: #fff;
+  }
+  .card_room {
+    grid-template-columns: 1fr;
+  }
+  .opa_room {
+    display: none;
+  }
+}

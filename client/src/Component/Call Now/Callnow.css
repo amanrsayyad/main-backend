@@ -1,0 +1,43 @@
+.call_btn_now {
+  position: fixed;
+  bottom: 45px;
+  right: 1%;
+  z-index: 1000;
+  background: linear-gradient(to right, #f58334, #d62f2f);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  animation: call_now_shrink 3000ms;
+  animation-iteration-count: infinite;
+  transition: 2s ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.call_btn_now a {
+  text-decoration: none;
+  color: #fff;
+}
+@keyframes call_now_shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.ori {
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(-360deg);
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}

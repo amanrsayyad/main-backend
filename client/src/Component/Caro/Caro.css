@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
+
+.caro_up{
+  position: relative;
+}
+.caro_img{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  animation: grow-and-shrink 3500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transition: 5s ease-in-out;
+}
+@keyframes grow-and-shrink {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.15);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+}
+.caro_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@keyframes slide-in {
+    from {
+      transform: rotate(60deg) translateY(-100%) scale(20);
+      opacity: 0.5
+    }
+    to {
+      transform: scale(0.5)  rotate(0deg) translateY(-100%) ;
+      opacity: 1;
+    }
+  }
+.caro_h2{
+  z-index: 1000;
+  font-size: 4rem;
+  font-weight: 400;
+  position: absolute; 
+  top: 230px;
+  left: 150px;
+  color: #fff;
+  animation:  slide-in 1000ms;
+  animation-delay: 4ms;
+  transition: 5s ease-in-out;
+  font-family: 'Satisfy', cursive;
+}
+.caro_para{
+  z-index: 1000;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 285px;
+  left: 250px;
+  color: rgb(248, 191, 4);
+  animation-delay: 4ms;
+  animation:  slide-in 1000ms;
+  transition: 5s ease-in-out;
+  margin-top: 1rem;
+}
+.caro_border{
+    border: 5px solid #fff;
+    z-index: 1000;
+}
+@media screen and (max-width:900px){
+    .caro_h2{
+        font-size: 2rem;
+        left: 50px;
+        animation: none;
+    }
+    .caro_p {
+        font-size: 1.2rem;
+        left: 50px;
+    }
+    .caro_img{
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+}

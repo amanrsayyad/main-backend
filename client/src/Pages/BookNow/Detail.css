@@ -1,0 +1,224 @@
+.caro_up {
+  position: relative;
+}
+.room_img {
+  height: 90vh;
+  object-fit: cover;
+}
+.caro_head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.caro_border {
+  border: 1px solid #000;
+  max-width: 250px;
+  position: absolute;
+}
+.caro_word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+/* translate(-100%, -100%) */
+/* skew(30deg, 20deg) */
+/* Create the animation... */
+@keyframes slide-in {
+  from {
+    transform: rotate(60deg) translateY(-100%) scale(20);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(0.5) rotate(0deg) translateY(-100%);
+    opacity: 1;
+  }
+}
+.caro_h2 {
+  z-index: 1000;
+  font-size: 4rem;
+  font-weight: 400;
+  position: absolute;
+  top: 230px;
+  left: 150px;
+  color: #fff;
+  animation: slide-in 1000ms;
+  animation-delay: 4ms;
+  transition: 5s ease-in-out;
+}
+.caro_p {
+  z-index: 1000;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 285px;
+  left: 250px;
+  color: yellow;
+  animation-delay: 4ms;
+  animation: slide-in 1000ms;
+  transition: 5s ease-in-out;
+  margin-top: 1rem;
+}
+.caro_border {
+  border: 5px solid #fff;
+  z-index: 1000;
+}
+@media screen and (max-width: 900px) {
+  .caro_h2 {
+    font-size: 2rem;
+    left: 50px;
+  }
+  .caro_p {
+    font-size: 1.2rem;
+    left: 50px;
+  }
+  .room_img {
+    height: 85vh;
+    object-fit: cover;
+  }
+}
+.detail {
+  padding: 2.5rem calc((90vw - 1450px) / 2);
+}
+.detail_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  /* margin-bottom: 0.4rem; */
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background: #fff;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.detail_img {
+  width: 100%;
+  height: 100%;
+}
+.detail_heading {
+  margin-bottom: 0.4rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  color: rgb(0, 0, 58);
+  margin-left: 38px;
+}
+.detail_features {
+  list-style: none;
+}
+.detail_feature {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  margin-left: 38px;
+}
+.h4_room {
+  margin-left: 38px;
+}
+.detail_feature {
+  margin-bottom: 0.2rem;
+  font-size: 35px;
+}
+.detail_card {
+  padding-left: 25px;
+  margin-bottom: 60px;
+}
+.person {
+  margin-top: 15px;
+}
+.person i {
+  padding-left: 5px;
+}
+.detail_btn {
+  margin-top: 50px;
+  margin-left: 38px;
+  margin-bottom: 25px;
+}
+.detail_btn a {
+  padding: 15px 25px;
+  /* background-color: rgb(0, 0, 44); */
+  background-color: #699b9b;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.detail_btn a:hover {
+  color: #ffd700;
+}
+.facilities {
+  margin-left: 38px;
+}
+.feature li {
+  display: inline-block;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+.feature a {
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(44, 44, 44, 0.1),
+    0px 0px 30px rgba(39, 39, 39, 0.1);
+  border: 1px solid black;
+  color: rgb(0, 10, 53);
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.feature a i {
+  padding-right: 5px;
+}
+.detail_img {
+  height: 90vh;
+  object-fit: cover;
+}
+@media screen and (max-width: 900px) {
+  .detail_img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feature li {
+    padding: 3px;
+  }
+  .feature a {
+    padding: 10px;
+  }
+  .detail {
+    padding: 1rem calc((100vw - 1000px) / 2);
+  }
+  .detail_container {
+    grid-template-columns: 1fr;
+  }
+  .detail_card {
+    padding-left: 0px;
+  }
+  .detail_heading {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: rgb(0, 0, 58);
+  }
+  .detail_btn {
+    margin-bottom: 55px;
+    margin-left: 15px;
+  }
+  .facilities {
+    margin-left: 1px;
+  }
+  .detail_btn {
+    margin-left: 1px;
+  }
+  .h4_room {
+    margin-left: 1px;
+  }
+  .detail_heading {
+    margin-left: 1px;
+  }
+  .detail_feature {
+    margin-left: 1px;
+  }
+  .detail_container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .feature a {
+    padding: 10px;
+  }
+}
